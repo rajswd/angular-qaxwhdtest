@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { SharedService } from 'src/app/service/shared.service';
-import { Employee } from 'src/app/interface/interface';
+import { SharedService } from './../../service/shared.service';
+import { Employee } from './../../interface/interface';
 
 
 @Component({
