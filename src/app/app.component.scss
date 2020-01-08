@@ -1,0 +1,28 @@
+.main-coainter{
+    display: flex;
+    
+    .nav{
+        list-style-type: none;
+        display: flex;
+        min-width: 7em;
+        max-width: 12em;
+        width: 100%;
+        flex-direction: column;
+        padding: 0;
+        margin:0;
+        height: calc(100vh - 2em);
+        &-bar{
+            padding: .51em 1em;
+            box-shadow: 1px 1px 4px #aaa;
+            text-transform: uppercase;
+            margin: 0 0.3em 0.3em 0;
+            & a{
+                text-decoration: none;
+            }
+        }
+    }
+    .router-container {
+        width: 100%;
+        padding: 0 1em;
+    }
+}

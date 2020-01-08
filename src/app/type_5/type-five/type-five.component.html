@@ -1,0 +1,25 @@
+
+<div class="header">
+    5) Has page transition animations. Here please make 2 examples, one with angular-
+animations and one that uses just css classes with animations for things like fading in an
+element.
+  </div>
+
+<div class="animation-container">
+    <div calss="animation blk-a">
+        <h3>Example 1 ( Using Amgular animation )</h3>
+        <!-- <div class="button-container">
+            <button class="start" (click)="startAnimation()"> Start Animation</button>
+            <button class="stop" (click)="stopAnimation()">Stop Animation</button>
+        </div> -->
+        
+        <div [@animateBox]="animation" class="animation-blk"></div>
+    </div>
+    <div calss="animation blk-b">
+            <h3>Example 2 ( Using CSS3 Animation )</h3>
+            <div class="animation-blk transition-animation"></div>
+
+    </div>
+</div>
+
+

@@ -1,0 +1,76 @@
+
+.header {
+    background: lightblue;
+    padding: 1em;
+}
+
+.form-container{ 
+    padding: 1em;
+    border-top: 1px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 7px lightgrey;
+    .title {
+        background: lightblue;
+        padding: .75em;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        .row {
+            margin: .3em;
+            label {
+                display: block;
+            }
+            button {
+                cursor: pointer;
+                margin-right: .75em;
+                padding: .5em 2em;
+                background: lightslategray;
+                color: #fff;
+                border: none;
+                box-shadow: 1px 1px 4px black;
+            }
+        }
+        .row:last-child {
+            display: block;
+            width: 100%;
+        }
+    }
+    .success-msg{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        opacity: 0.9;
+        background: lightblue;
+        .center-blk {
+            opacity: 1;
+            background: cadetblue;
+            position: absolute;
+            color: red;
+        
+            .title{
+                background: green;
+                color:#fff;
+                margin-bottom: .5em;
+            }
+            .info-blk{
+                padding: 0 1em;
+                .label{
+                    width: 10em;
+                    margin-bottom: 0.75em;
+                    display: inline-block;
+                }
+                .label:after{
+                    content: ":";
+                    width:100%;
+                }
+            }
+        }
+    }
+}

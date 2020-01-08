@@ -1,0 +1,28 @@
+<div class="table-container">
+    <div class="title">Employee List</div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <td>    Employee Id </td>
+                <td>    First Name  </td>
+                <td>    Last Name   </td>
+                <td>    Contact     </td>
+                <td>    Country     </td>
+                <td>    Action      </td>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr *ngFor="let employee of employeeList;let i = index">
+                    <td>{{employee.employeeId}}</td>
+                    <td>{{employee.firstName}}</td>
+                    <td>{{employee.lastName}}</td>
+                    <td>{{employee.contact}}</td>
+                    <td>{{employee.country}}</td>
+                    <td (click)="onDeleteEvent(i)">Delete</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

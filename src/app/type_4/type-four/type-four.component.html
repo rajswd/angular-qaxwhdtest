@@ -1,0 +1,36 @@
+
+<div class="header">
+    4) Passes data between pages. Have an input field in one page of which contents is
+displayed in the second page.
+<div class="note">
+    <b>Note :</b> Please Delete some employee recored from question one.
+</div>
+
+  </div>
+<div class="table-container">
+        <div class="title">Deleted Employee List</div>
+    
+        <table class="table">
+            <thead>
+                <tr>
+                    <td>    Employee Id </td>
+                    <td>    First Name  </td>
+                    <td>    Last Name   </td>
+                    <td>    Contact     </td>
+                    <td>    Country     </td>
+                </tr>
+            </thead>
+    
+            <tbody>
+                <tr *ngFor="let employee of employeeList;let i = index">
+                        <td>{{employee.employeeId}}</td>
+                        <td>{{employee.firstName}}</td>
+                        <td>{{employee.lastName}}</td>
+                        <td>{{employee.contact}}</td>
+                        <td>{{employee.country}}</td>
+                </tr>
+            </tbody>
+        </table>
+    
+    </div>
+    

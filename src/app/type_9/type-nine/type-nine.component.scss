@@ -1,0 +1,25 @@
+
+.header {
+    background: lightblue;
+    padding: 1em;
+}
+
+.container {
+    padding: 1em;
+    .row {
+        text-align: justify;
+        margin: 1em 0;
+        label {
+            display: block;text-align: center;
+        }
+        input {
+            
+            margin-top: .31em;
+            box-sizing: border-box;
+            padding: .45em;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}

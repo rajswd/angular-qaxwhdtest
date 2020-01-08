@@ -1,0 +1,45 @@
+
+.header {
+    background: lightblue;
+    padding: 1em;
+}
+
+.form-container{ 
+    padding: 1em;
+    border-top: 1px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 7px lightgrey;
+    .title {
+        background: lightblue;
+        padding: .75em;
+    }
+    .form-cls {
+        display: flex;
+        flex-wrap: wrap;
+        .row {
+            margin: .3em;
+            label {
+                display: block;
+            }
+            button {
+                cursor: pointer;
+                margin-right: .75em;
+                padding: .5em 2em;
+                background: lightslategray;
+                color: #fff;
+                border: none;
+                box-shadow: 1px 1px 4px black;
+            }
+            .error-cl{
+                color : red;
+                font-size: .75em;
+                display: block;
+            }
+            
+        }
+        .row:last-child {
+            display: block;
+            width: 100%;
+        }
+    }
+}

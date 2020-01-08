@@ -1,0 +1,65 @@
+<div class="header">
+    1) Demonstrates the usage of ngOnChanges, @Ouput() and @Input().
+</div>
+
+<div class="form-container">
+    <div class="title">Add Employee Detail</div>
+    <form class="form-cls" [formGroup]="employee">
+        <div class="row">
+            <label>Employee Id:</label>
+            <input type="text" formControlName="employeeId"/> 
+        </div>
+
+        <div class="row">
+            <label>First Name</label>
+            <input type="text" formControlName="firstName"/> 
+        </div>
+    
+        <div class="row">
+            <label>Last Name</label>
+            <input type="text" formControlName="lastName"/> 
+        </div>
+        
+        <div class="row">
+            <label>Contact</label>
+            <input type="text" formControlName="contact" /> 
+        </div>
+        
+        <div class="row">
+            <label>Country</label>
+            <input type="text" formControlName="country"/> 
+        </div>
+
+        <div class="row">
+            <button (click)="reset()">  reset </button>    
+            <button (click)="addToList()"  [disabled]="employee.invailed">  Add </button>
+                
+        </div>
+        
+    </form>
+    <div class="success-msg" *ngIf="isDeletedData">
+        <div class="center-blk">
+            <div class="title">Deleted Employee Details</div>
+            <div class="info-blk">
+                <label class="label"> Employee Id</label>
+                <span>{{tmpObj.employeeId}}</span>
+            </div>
+            <div class="info-blk">
+                <label class="label"> Full Name </label>
+                <span>{{tmpObj.firstName}} {{tmpObj.lastName}}</span>
+            </div>
+            <div class="info-blk">
+                <label class="label"> Contact</label>
+                <span>{{tmpObj.contact}}</span>
+            </div>
+            <div class="info-blk">
+                <label class="label"> Country</label>
+                <span>{{tmpObj.country}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="list-container">
+    <app-child-one [data]="item" (OnDelete)="OnDelete($event)"></app-child-one>
+</div>
+

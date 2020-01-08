@@ -1,0 +1,10 @@
+
+<div class="header">
+    8) Demonstrates the usage of ng-content.
+  </div>
+
+  <ng-container *ngFor="let i of counter;let j = index;">
+    <app-childeight>
+      <div class="content"> This is {{j%2 == 0 ? ' Even ' :' Odd '}} Card. (No. - {{j}})</div>
+    </app-childeight>
+  </ng-container>

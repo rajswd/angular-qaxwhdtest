@@ -1,0 +1,30 @@
+
+<div class="header">
+    7) Have 2 inputs with some simple validation (like an email validation) without the require
+of angular-forms and ngModel.
+  </div>
+
+<div class="form-container">
+
+        <div class="form-cls">
+           
+            <div class="row">
+                <label>Name</label>
+                <input #name type="text"  required /> 
+                <span class="error-cl" *ngIf="errorModel.name">Employee Name is required</span>
+            </div>
+        
+           
+            <div class="row">
+                    <label>Email</label>
+                    <input #email type="email"  required> 
+                    <span class="error-cl" *ngIf="errorModel.email">Employee Email is required</span>
+                </div>
+    
+            <div class="row">   
+                <button  (click)="validate()">  Validate </button>
+                    
+            </div>
+        </div>
+    </div>
+        

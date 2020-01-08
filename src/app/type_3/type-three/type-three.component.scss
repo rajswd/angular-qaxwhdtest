@@ -1,0 +1,41 @@
+
+.header {
+    background: lightblue;
+    padding: 1em;
+}
+button{
+    background: lightgreen;
+    cursor: pointer;
+    padding: 1.5em 2em;
+    display: block;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 3em;
+    border: 2px solid green;
+    border-radius: 1em;
+    box-shadow: 4px 4px 1px grey;
+}
+ul.nav.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background: lightgrey;
+    li.nav-item {
+        margin-right: .1em;
+        padding: .751em;
+        a.nav-link {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+            
+        }
+        &:hover{
+            background: gray;
+        }
+    }
+}
+.child-router{
+    position: relative;
+    height: 81%;
+}
