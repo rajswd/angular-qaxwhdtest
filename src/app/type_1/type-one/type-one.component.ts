@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup,  FormBuilder, Validators } from '@angular/forms';
-import { Employee } from './../../src/app/interface/interface';
-import {SharedService} from "./../../service/shared.service";
+import { Employee } from 'src/app/interface/interface';
+import { SharedService } from 'src/app/service/shared.service';
 
 @Component({
   selector: 'app-type-one',

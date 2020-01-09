@@ -10,26 +10,22 @@ export class SharedService {
   private deletedEmployeeList:Array<Employee> = [];
   private employeeList:Array<Employee> = [];
 
-  public behaviourSubject:BehaviorSubject<Array<Employee>>;
-
   constructor() {
-    this.behaviourSubject = new BehaviorSubject(this.deletedEmployeeList);
    }
 
   pushDeletedEmployeeDetail(employee:Employee){
     this.deletedEmployeeList.push(employee); 
-    this.behaviourSubject.next(this.deletedEmployeeList);   
   }
 
   pushEmployeeDetail(employee:Employee){
     this.employeeList.push(employee);    
   }
 
-  getEmployeeList(){
+  getEmployeeList():Array<Employee>{
     return JSON.parse(JSON.stringify(this.employeeList));
   }
 
-  getDeletedEmployeeList(){
+  getDeletedEmployeeList():Array<Employee>{
     return JSON.parse(JSON.stringify(this.deletedEmployeeList));
   }
 

@@ -1,0 +1,15 @@
+
+.header {
+    background: lightblue;
+    padding: 1em;
+}
+.container{
+    padding: 2em 2em;
+    
+    .row div{
+        padding: 2em;
+        transition: 2s all linear;
+        list-style-type: square;
+
+    }
+}

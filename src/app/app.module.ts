@@ -15,6 +15,8 @@ import { TypeTenComponent } from './type_10/type-ten/type-ten.component';
 import { ChildOneComponent } from './type_1/type-one/childOne/child-one/child-one.component';
 import { NumberFormatDirective } from './type_9/number-format.directive';
 import { ChildeightComponent } from './type_8/child-8/childeight/childeight.component';
+import { TypeElevenComponent } from './type_11/type-eleven/type-eleven.component';
+import { HoverDirective } from './type_11/hover.directive';
 
 
 @NgModule({
@@ -29,7 +31,9 @@ import { ChildeightComponent } from './type_8/child-8/childeight/childeight.comp
     TypeTenComponent,
     ChildOneComponent,
     NumberFormatDirective,
-    ChildeightComponent
+    ChildeightComponent,
+    TypeElevenComponent,
+    HoverDirective
   ],
   imports: [
     BrowserModule,

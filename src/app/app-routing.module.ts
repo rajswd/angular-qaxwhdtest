@@ -7,6 +7,7 @@ import { TypeSevenComponent } from './type_7/type-seven/type-seven.component';
 import { TypeEightComponent } from './type_8/type-eight/type-eight.component';
 import { TypeNineComponent } from './type_9/type-nine/type-nine.component';
 import { TypeTenComponent } from './type_10/type-ten/type-ten.component';
+import { TypeElevenComponent } from './type_11/type-eleven/type-eleven.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'type-8', component: TypeEightComponent },
   { path: 'type-9', component: TypeNineComponent },
   { path: 'type-10', component: TypeTenComponent },
+  { path: 'type-11', component: TypeElevenComponent },
   { path: '',   redirectTo: '/type-1', pathMatch: 'full' },
   { path: '**',   redirectTo: 'type-1' }
 ];
