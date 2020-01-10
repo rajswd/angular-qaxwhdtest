@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, Output, EventEmitter, OnChanges } from '@angular/core';
-import { Employee } from 'src/app/interface/interface';
-import { SharedService } from 'src/app/service/shared.service';
+import { Employee } from './../../../../interface/interface';
+import { SharedService } from './../../../../service/shared.service';
 
 
 @Component({
