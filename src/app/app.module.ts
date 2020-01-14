@@ -17,7 +17,7 @@ import { NumberFormatDirective } from './type_9/number-format.directive';
 import { ChildeightComponent } from './type_8/child-8/childeight/childeight.component';
 import { TypeElevenComponent } from './type_11/type-eleven/type-eleven.component';
 import { HoverDirective } from './type_11/hover.directive';
-
+import { SlicingComponent } from './slicing/slicing/slicing.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +33,8 @@ import { HoverDirective } from './type_11/hover.directive';
     NumberFormatDirective,
     ChildeightComponent,
     TypeElevenComponent,
-    HoverDirective
+    HoverDirective,
+    SlicingComponent
   ],
   imports: [
     BrowserModule,
